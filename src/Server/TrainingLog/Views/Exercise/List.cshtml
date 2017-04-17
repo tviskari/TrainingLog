@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+    <table class="table">
+
+    @foreach (var exercise in ViewBag.Exercises)
+    {
+        <tr>
+            <td>@exercise.ID</td>
+            <td>@exercise.LengthInTime</td>
+            <td>@exercise.Type</td>
+            <td>@exercise.LentghInMeters</td>
+            <td>@exercise.Name</td>
+            <td>@exercise.Comment</td>
+        </tr>
+    }
+</table>
+
