@@ -17,6 +17,11 @@ namespace TrainingLog.Controllers
             return View();
         }
 
+        public ActionResult Statistics()
+        {
+            return View();
+        }
+
         public ActionResult List()
         {
             RepositoryFactory factory = new RepositoryFactory();
