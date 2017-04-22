@@ -171,6 +171,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Pics\001-transport.png" />
+    <Content Include="Pics\002-running.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -204,6 +206,8 @@
     <Content Include="Views\Exercise\List.cshtml" />
     <Content Include="Views\UserProfile\UserInfo.cshtml" />
     <Content Include="Views\Exercise\Statistics.cshtml" />
+    <Content Include="Views\Shared\ExerciseList.cshtml" />
+    <Content Include="Views\Shared\TenDaysStats.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
