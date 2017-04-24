@@ -29,9 +29,9 @@
                     <li>@Html.ActionLink("Statistics","Statistics","Exercise")</li>
                     <li>@Html.ActionLink("My Profile","UserInfo","UserProfile")</li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <ul class="nav navbar-nav navbar-right" style="position: relative; display: block; padding: 10px 15px;">
+                    <li><button class="btn-link" data-toggle="modal" data-target="#signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</button></li>
+                    <li><button class="btn-link" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login</button></li>
                 </ul>
             </div>
         </div>
@@ -39,5 +39,7 @@
     <div class="container">
         @RenderBody()
     </div>
+    @Html.Partial("Login")
+    @Html.Partial("SignUp")
 </body>
 </html>

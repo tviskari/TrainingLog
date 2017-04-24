@@ -40,7 +40,10 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8">
-                        <button data-toggle="collapse" data-target="#map1" class="btn btn-danger">Show / hide the map</button>
+                        <div class="btn-group">
+                            <button data-toggle="collapse" data-target="#map1" class="btn btn-danger btn-sm">Map</button>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#pics3">Photos</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,6 +126,20 @@
                     <div class="col-sm-4">Time: 2:31:15</div>
                     <div class="col-sm-4">HR: 133</div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pics3" class="modal fade" role="dialog" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"> <button class="close" aria-label="close" data-dismiss="modal">&times;</button></div>
+            <div class="modal-body">
+                @Html.Partial("PictureCarousel")
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
